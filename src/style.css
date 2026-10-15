@@ -1,0 +1,114 @@
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --text: #1d2330;
+  --muted: #667085;
+  --border: #e3e6eb;
+  --up: #1f9d55;
+  --down: #d64545;
+  --accent: #3b5bdb;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: grid;
+  gap: 32px;
+}
+
+button {
+  font: inherit;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.griglia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--muted);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.card.up { border-left-color: var(--up); }
+.card.down { border-left-color: var(--down); }
+.card .tech { color: var(--muted); font-size: 0.85rem; }
+.card .badge { font-weight: 700; font-size: 0.8rem; }
+.card.up .badge { color: var(--up); }
+.card.down .badge { color: var(--down); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+th { font-size: 0.85rem; color: var(--muted); }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.elenco {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.elenco li {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.elenco li:last-child { border-bottom: 0; }
+.vuoto { color: var(--muted); font-style: italic; }

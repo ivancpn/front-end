@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard microservizi</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard microservizi</h1>
+      <button id="aggiorna" type="button">Aggiorna</button>
+    </header>
+    <main>
+      <section>
+        <h2>Stato servizi</h2>
+        <div id="stato" class="griglia"></div>
+      </section>
+      <section>
+        <h2>Catalogo e magazzino</h2>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Prodotto</th><th>Categoria</th><th class="num">Prezzo</th><th class="num">Giacenza</th></tr>
+          </thead>
+          <tbody id="prodotti"></tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Ordini</h2>
+        <ul id="ordini" class="elenco"></ul>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
