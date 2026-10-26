@@ -1,7 +1,7 @@
 # front-end · dashboard
 
 Dashboard **Vite + TypeScript** (senza framework) che mostra lo stato dei 4 microservizi,
-il catalogo con le giacenze e l'elenco ordini. TEST
+il catalogo con le giacenze e l'elenco ordini.
 
 | | |
 |---|---|
